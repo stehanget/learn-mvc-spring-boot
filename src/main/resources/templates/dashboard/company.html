@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<body>
+    <div layout:fragment="company()" class="d-grid gap-4">
+        <div class="card mb-0">
+            <div class="card-body">
+                <div class="row row-cols-2 mb-3">
+                    <div class="col">
+                        <label for="company-code" class="form-label">Code</label>
+                        <input type="text" class="form-control" id="company-code">
+                    </div>
+                    <div class="col">
+                        <label for="company-name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="company-name">
+                    </div>
+                </div>
+                <div class="row row-cols-2 mb-3">
+                    <div class="col">
+                        <label for="company-phone" class="form-label">Phone</label>
+                        <input type="number" class="form-control" id="company-phone">
+                    </div>
+                    <div class="col">
+                        <label for="company-email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="company-email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="company-address" class="form-label">Address</label>
+                    <textarea class="form-control" id="company-address"></textarea>
+                </div>
+                <div class="mt-3 float-end">
+                    <button type="submit" id="btn-store-company" class="btn btn-dark">Store</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-0">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 table-responsive">
+                        <table id="table-company" class="display">
+                            <thead>
+                                <tr>
+                                    <th style="width:10px;">No.</th>
+                                    <th>Code</th>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

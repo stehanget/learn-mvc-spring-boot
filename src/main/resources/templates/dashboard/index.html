@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/dashboard}">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <div layout:fragment="content" class="tab-content">
+        <div class="tab-pane fade show active" id="company" role="tabpanel">
+            <h3 class="fw-bold mb-3">Company</h3>
+            <div layout:replace="~{dashboard/company :: company()}"></div>
+        </div>
+        <div class="tab-pane fade" id="transaction" role="tabpanel">
+            <h3 class="fw-bold mb-3">Transaction</h3>
+            <div layout:replace="~{dashboard/transaction :: transaction()}"></div>
+        </div>
+        <div class="tab-pane fade" id="item" role="tabpanel">
+            <h3 class="fw-bold mb-3">Item</h3>
+            <div layout:replace="~{dashboard/item :: item()}"></div>
+        </div>
+    </div>
+</body>
+</html>
